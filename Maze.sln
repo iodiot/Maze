@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maze", "Maze\Maze\Maze.csproj", "{AB2AAC08-F9D4-4306-8CA2-5B049266C5A3}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MazeContent", "Maze\MazeContent\MazeContent.contentproj", "{843FAD31-12C7-41AD-9A22-2AD797A17CF6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AB2AAC08-F9D4-4306-8CA2-5B049266C5A3}.Debug|x86.ActiveCfg = Debug|x86
+		{AB2AAC08-F9D4-4306-8CA2-5B049266C5A3}.Debug|x86.Build.0 = Debug|x86
+		{AB2AAC08-F9D4-4306-8CA2-5B049266C5A3}.Release|x86.ActiveCfg = Release|x86
+		{AB2AAC08-F9D4-4306-8CA2-5B049266C5A3}.Release|x86.Build.0 = Release|x86
+		{843FAD31-12C7-41AD-9A22-2AD797A17CF6}.Debug|x86.ActiveCfg = Debug|x86
+		{843FAD31-12C7-41AD-9A22-2AD797A17CF6}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

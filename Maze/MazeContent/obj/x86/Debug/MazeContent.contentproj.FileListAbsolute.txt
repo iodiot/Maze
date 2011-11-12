@@ -1,0 +1,3 @@
+D:\Dropbox\Projects\Maze\Maze\MazeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\My Dropbox\Projects\Maze\Maze\MazeContent\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Maze\Maze\MazeContent\obj\x86\Debug\ResolveAssemblyReference.cache
