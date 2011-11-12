@@ -10,6 +10,7 @@ namespace Maze.Engine.Blocks
     public SolidBlock(Core core, int id)
       : base(core, id)
     {
+      
       blocksMotion = true;
     }
   }
