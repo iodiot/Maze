@@ -17,8 +17,6 @@ namespace Maze.Engine.Entities
 {
   public class JailEntity : Entity
   {
-    Vector3 originalPosition;
-
     public JailEntity(Core core, Vector3 position)
       : base(core, position)
     {

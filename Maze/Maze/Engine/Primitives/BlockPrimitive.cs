@@ -91,7 +91,7 @@ namespace Maze.Engine.Primitives
       vertices[n++] = new VertexPositionNormalTexture(topRightBack, normalTop, textureTopRight);
 
       // Add the vertices for the BOTTOM face
-      vertices[n++] = new VertexPositionNormalTexture(btmLeftFront, normalBottom, textureBottomRight); //textureTopLeft);
+      vertices[n++] = new VertexPositionNormalTexture(btmLeftFront, normalBottom, textureBottomRight); 
       vertices[n++] = new VertexPositionNormalTexture(btmLeftBack, normalBottom, textureTopRight);
       vertices[n++] = new VertexPositionNormalTexture(btmRightBack, normalBottom, textureTopLeft);
       vertices[n++] = new VertexPositionNormalTexture(btmLeftFront, normalBottom, textureBottomRight);

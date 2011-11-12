@@ -22,8 +22,7 @@ namespace Maze.Engine.Blocks
     public int id = -1;
 
     protected List<Primitive> primitives = new List<Primitive>();
-
-    Core core;
+    protected Core core;
 
     public Block(Core core, int id)
     {
