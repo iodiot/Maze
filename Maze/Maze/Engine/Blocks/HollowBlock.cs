@@ -7,8 +7,8 @@ namespace Maze.Engine.Blocks
 {
   public class HollowBlock : Block
   {
-    public HollowBlock(Core core, int id) 
-        : base(core, id)
+    public HollowBlock(Core core) 
+        : base(core)
     {
       blocksMotion = false;
     }

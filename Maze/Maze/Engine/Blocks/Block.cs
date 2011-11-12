@@ -19,15 +19,13 @@ namespace Maze.Engine.Blocks
   {
     public bool blocksMotion = false;
     public float friction = .0f;
-    public int id = -1;
 
     protected List<Primitive> primitives = new List<Primitive>();
     protected Core core;
 
-    public Block(Core core, int id)
+    public Block(Core core)
     {
       this.core = core;
-      this.id = id;
     }
   }
 }

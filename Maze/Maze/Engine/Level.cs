@@ -37,9 +37,7 @@ namespace Maze.Engine
     int width = -1;
     int height = -1;
 
-    Dictionary<int, Block> blocks;
-    int currentId = 1;
-    int[,] map;
+    Block[,] map;
 
     List<VertexPositionNormalTexture> levelVertices;
     List<VertexPositionNormalTexture> billboardVertices;
@@ -65,8 +63,6 @@ namespace Maze.Engine
     /// <param name="name"></param>
     public void LoadContent(ContentManager content, string name)
     {
-      blocks = new Dictionary<int, Block>();
-
       Texture2D texture = content.Load<Texture2D>("Levels\\" + name);
 
       width = texture.Width;
@@ -79,16 +75,16 @@ namespace Maze.Engine
       FloodFill(colors, 0, 0, width, height, colors[0], Color.Magenta);
 
       // Creates map with id`s where positive numbers mean pointer to some block
-      map = new int[width, height];
+      map = new Block[width, height];
 
       for (int i = 0; i < width; ++i)
         for (int j = 0; j < height; ++j)
         {
           Color c = colors[i + j * width];
           if (c != Color.Magenta)
-            AddBlock(ColorToBlock(c), i, j);
+            map[i, j] = ColorToBlock(c);
           else
-            map[i, j] = -1;
+            map[i, j] = null;
 
           if (c == Color.Red)
           {
@@ -144,29 +140,20 @@ namespace Maze.Engine
 
     #region Block operations
 
-    public void AddBlock(Block b, int x, int y)
-    {
-      map[x, y] = b.id;
-      blocks.Add(b.id, b);
-    }
-
     public Block GetBlock(int x, int y)
     {
       if (x < 0 || x >= width || y < 0 || y >= height)
         return null;
 
-      if (map[x, y] == -1)
-        return null;
-
-      return blocks[map[x, y]];
+      return map[x, y];
     }
 
     public Block ColorToBlock(Color c)
     {
       if (c == Color.Black)
-        return new SolidBlock(core, currentId++);
+        return new SolidBlock(core);
       else
-        return new HollowBlock(core, currentId++);
+        return new HollowBlock(core);
     }
 
     #endregion
